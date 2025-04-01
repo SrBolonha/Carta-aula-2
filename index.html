@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta do Leitor</title>
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            background-color: #3d21bb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .letter-container {
+            background: #c70b7f;
+            padding: 40px;
+            width: 600px;
+            box-shadow: 0 0 10px rgb(7, 145, 209);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .header {
+            font-size: 34px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .date {
+            text-align: left;
+            margin-bottom: 40px;
+        }
+
+        .content {
+            text-align: justify;
+            margin-top: 20px;
+        }
+
+        .signature {
+            margin-top: 70px;
+            text-align: right;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="letter-container">
+        <div class="header">Carta do Leitor</div>
+        <div class="date">Navegantes, 28 de março de 2025</div>
+
+        <div class="content">
+            <p>Para a Minha princesa Emilly,</p>
+            <p>
+                Gostaria de Dizer que o meu Amor por você não tem fim, Eu te amo muito, mais do que você pode imaginar. 
+                E pode Crer que um dia Eu e você vamos nos casar e ter uma familia linda 
+            </p>
+            <p>Atenciosamente,</p>
+            <div class="signature">Pedro Augusto Pegoraro</div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('date').textContent = new Date().toLocaleDateString('pt-BR');
+    </script>
+</body>
+
+</html>
